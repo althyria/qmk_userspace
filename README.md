@@ -19,16 +19,16 @@ Follow the [getting started](https://docs.qmk.fm/#/newbs_getting_started) docs t
 ### Setup
 ```sh
 # Clone the userspace
-git clone https://git.sajenim.dev/jasmine/qmk_userspace.git
+git clone https://github.com/althyria/qmk_userspace.git
 
 # Configure QMK to use external userspace
 qmk config user.overlay_dir="$(realpath qmk_userspace)"
 
 # Compile for Ferris Sweep
-qmk compile -kb ferris/sweep -km sajenim
+qmk compile -kb ferris/sweep -km jasmine
 
 # Flash to keyboard (enter bootloader mode first)
-qmk flash -kb ferris/sweep -km sajenim
+qmk flash -kb ferris/sweep -km jasmine
 ```
 
 ## About
@@ -61,7 +61,7 @@ See [**magic sturdy**](https://github.com/Ikcelaks/keyboard_layouts/blob/main/ma
 ## My Keymap
 
 <div align="center">
-<img src="./assets/img/keymaps/ferris-sajenim.svg" width="100%" alt="ferris-keymap">
+<img src="./assets/img/keymaps/ferris.svg" width="100%" alt="ferris-keymap">
 </div>
 
 ### Usage Examples
@@ -84,7 +84,7 @@ Tap a key twice using the Repeat key (left thumb):
 - `i` + Repeat → `ng` (completes "ing")
 - `.` + Repeat → `./` (first repeat), `../` (second repeat)
 
-For complete documentation of all repeat and magic key behaviors, see the [wiki](https://git.sajenim.dev/jasmine/qmk_userspace/wiki).
+For complete documentation of all repeat and magic key behaviors, see the [wiki](https://github.com/althyria/qmk_userspace/wiki).
 
 ## References
 
