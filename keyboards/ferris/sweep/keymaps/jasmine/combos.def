@@ -15,6 +15,9 @@ COMB(num_0,           KC_0,           KC_QUOT,       KC_A)
 // top row left
 COMB(tilde,           KC_TILD,        KC_L,          KC_Y)
 
+// top row right
+COMB(tmux_prefix,     C(KC_B),        KC_O,          KC_U)
+
 // home row left
 COMB(tab,             KC_TAB,         HRM_R,         HRM_S)
 COMB(delword,         C(KC_BSPC),     HRM_S,         HRM_T)

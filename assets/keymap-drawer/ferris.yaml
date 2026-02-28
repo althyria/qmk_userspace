@@ -6,25 +6,25 @@ layers:
     - [w, l, y, p, b, z, f, o, u, "'"]
     - [c, {h: Alt, t: r}, {h: Shift, t: s}, {h: Gui, t: t}, g, m, {h: Gui, t: n}, {h: Shift, t: e}, {h: Alt, t: i}, a]
     - [q, {h: Sym, t: j}, v, {h: Ctrl, t: d}, k, x, {h: Ctrl, t: h}, "/", {h: Sym, t: ","}, "."]
-    - [{h: Nav, t: Repeat}, Spc, Bspc, {h: Num, t: Magic}]
+    - [{h: Nav, t: Xmonad}, Spc, Bspc, {h: Num, t: Wezterm}]
 
   NAV:
     - [Null, Prev Track, Play Pause, Next Track, Vol Up, Page Up, Home, Up, End, Null]
     - [Null, OS Alt, OS Shift, OS Gui, Vol Down, Page Down, Left, Down, Right, Del]
     - [Null, OS Sym, Null, OS Ctrl, Null, Null, Tab, Null, Null, Null]
-    - [{h: Nav, t: Repeat, type: trans}, {t: Spc, type: trans}, {t: Bspc, type: trans}, {h: Num, t: Magic, type: trans}]
+    - [{h: Nav, t: Xmonad, type: trans}, {t: Spc, type: trans}, {t: Bspc, type: trans}, {h: Num, t: Wezterm, type: trans}]
 
   NUM:
     - ["(", 7, 8, 9, ")", Null, "+", "-", "*", "/"]
     - [0, 4, 5, 6, "=", Null, OS Gui, OS Shift, OS Alt, Null]
     - [",", 1, 2, 3, ".", Null, OS Ctrl, Null, OS Sym, Null]
-    - [{h: Nav, t: Repeat, type: trans}, {t: Spc, type: trans}, {t: Bspc, type: trans}, {h: Num, t: Magic, type: trans}]
+    - [{h: Nav, t: Xmonad, type: trans}, {t: Spc, type: trans}, {t: Bspc, type: trans}, {h: Num, t: Wezterm, type: trans}]
 
   SYM:
     - ["`", "<", "-", ">", Null, Null, "[", "_", "]", "+"]
     - ["|", "(", "=", ")", "#", "%", "{", "$", "}", ";"]
     - ["!", "&", "^", "@", Null, Null, "*", {t: "/", type: trans}, {t: ",", type: trans}, {t: ".", type: trans}]
-    - [{h: Nav, t: Repeat, type: trans}, {t: Spc, type: trans}, {t: Bspc, type: trans}, {h: Num, t: Magic, type: trans}]
+    - [{h: Nav, t: Xmonad, type: trans}, {t: Spc, type: trans}, {t: Bspc, type: trans}, {h: Num, t: Wezterm, type: trans}]
 
 combos:
   # Vertical numbers
@@ -39,6 +39,9 @@ combos:
   - {p: [8, 18],    k: "9",        l: ["CANARY"]}
   - {p: [9, 19],    k: "0",        l: ["CANARY"]}
 
+  # Top row left
+  - {p: [1, 2],     k: "~",        l: ["CANARY"]}
+
   # Home row left
   - {p: [11, 12],   k: "Tab",      l: ["CANARY"]}
   - {p: [12, 13],   k: "C-w",      l: ["CANARY"]}
@@ -49,7 +52,6 @@ combos:
 
   # Bottom row left
   - {p: [21, 22],   k: ":",        l: ["CANARY"]}
-  - {p: [22, 23],   k: "M-a",      l: ["CANARY"]}
 
   # Bottom row right
   - {p: [26, 27],   k: "M1-a",     l: ["CANARY"]}
